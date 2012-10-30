@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:visible="true" android:checkable="false" android:icon="@android:drawable/ic_menu_more" android:menuCategory="system" android:checked="false" android:enabled="true" android:id="@+id/itemOpenUrl" android:title="@string/web_open_url"></item>
+<item android:visible="true" android:checkable="false" android:icon="@android:drawable/ic_menu_share" android:menuCategory="system" android:id="@+id/itemShare" android:checked="false" android:enabled="true" android:title="@string/web_share"></item>
+<item android:visible="true" android:checkable="false" android:icon="@android:drawable/ic_menu_rotate" android:menuCategory="system" android:checked="false" android:enabled="true" android:id="@+id/itemRefresh" android:title="@string/web_refetch"></item>
+<item android:visible="true" android:checkable="false" android:menuCategory="system" android:checked="false" android:enabled="true" android:icon="@android:drawable/ic_menu_delete" android:id="@+id/itemDelete" android:title="@string/web_delete"></item>
+<item android:menuCategory="system" android:id="@+id/itemCopyUrl" android:visible="true" android:enabled="true" android:checkable="false" android:checked="false" android:icon="@android:drawable/ic_menu_more" android:title="@string/web_copy"></item>
+
+<item android:id="@+id/itemSelectText" android:menuCategory="system" android:enabled="true" android:checked="false" android:visible="true" android:checkable="false" android:title="@string/web_selecttext" android:icon="@android:drawable/ic_menu_camera"></item>
+
+
+<item android:menuCategory="system" android:title="@string/web_findtext" android:id="@+id/itemFindText" android:checkable="false" android:enabled="true" android:checked="false" android:visible="true" android:icon="@android:drawable/ic_menu_search"></item>
+
+<item android:id="@+id/itemRename" android:menuCategory="system" android:title="@string/web_rename" android:icon="@android:drawable/ic_menu_edit" android:visible="true" android:enabled="true" android:checkable="false" android:checked="false"></item>
+
+
+
+<item android:visible="true" android:checkable="false" android:icon="@android:drawable/ic_menu_rotate" android:menuCategory="system" android:checked="false" android:enabled="true" android:id="@+id/itemLandscape" android:title="@string/web_landscape"></item>
+<item android:visible="true" android:checkable="false" android:icon="@android:drawable/ic_menu_rotate" android:menuCategory="system" android:checked="false" android:enabled="true" android:id="@+id/itemPortrait" android:title="@string/web_portrait"></item>
+<item android:visible="true" android:checkable="false" android:icon="@android:drawable/ic_menu_rotate" android:menuCategory="system" android:checked="false" android:enabled="true" android:id="@+id/itemSystemDefined" android:title="@string/web_system_defined"></item>
+</menu>

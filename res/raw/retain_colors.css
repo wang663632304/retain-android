@@ -1,0 +1,22 @@
+
+body,div,table,textarea,input,caption,cite,em,strong,dfn,code,ul,li,ol,menu,dir,td,tr,th,span,dl,dt,dd,form,legend,blockquote,fieldset,th,h1,h2,h3,h4,h5,h6,tbody,caption,pre,hr,img,br,font,a
+{
+   color: @pref_key_fgcolor !important;
+   background-color: @pref_key_bgcolor !important;
+   border-color: @pref_key_bgcolor !important;
+}
+
+p
+{
+    color:@pref_key_fgcolor !important;
+}
+
+body
+{
+    color:@pref_key_fgcolor !important;
+}
+
+* {
+    color:@pref_key_fgcolor !important;
+
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="Button" parent="@android:style/Widget.Button">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:shadowColor">#FF000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">0.2</item>
+        <item name="android:textSize">16dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+    
+<style name="groupRow" parent="@android:style/Widget.TextView" >
+        <item name="android:textSize">16dip</item>
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:paddingLeft">32dip</item>
+</style>
+
+<style name="TitleStyle">
+        <item name="android:background">@color/dark_grey</item>
+        <item name="android:textColor">@color/white</item>
+</style>
+    
+<style name="TitleTheme">
+       <item name="android:windowTitleBackgroundStyle">@style/TitleStyle</item>
+       <item name="android:windowTitleSize">45dip</item>
+</style>    
+    
+
+<style name="TitleThemeThin">
+       <item name="android:windowTitleBackgroundStyle">@style/TitleStyle</item>
+       <item name="android:windowTitleSize">22dip</item>
+</style>    
+
+<style name="FindDialog">
+    <item name="android:windowEnterAnimation">@anim/find_dialog_enter</item>
+    <item name="android:windowExitAnimation">@anim/find_dialog_exit</item>
+</style>
+
+    
+<style name="FindDialogTheme"> 
+    <item name="android:windowFrame">@null</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:background">@null</item>
+    <item name="android:windowBackground">@null</item>
+    <item name="android:windowAnimationStyle">@style/FindDialog</item>
+    <item name="android:backgroundDimEnabled">false</item>
+</style>
+    
+    
+</resources>

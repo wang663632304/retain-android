@@ -1,0 +1,100 @@
+
+<html>
+<head><title>Retain - Help</title>
+
+<style>
+body
+{       
+
+        margin-left: 0px;
+        margin-top:  0px;
+
+        font-family:Arial;
+        
+        font-size:12pt;
+        background-color: #565656;
+        color: #FFFFFF;
+}
+
+
+A:link
+{
+        COLOR: #FFFFFF;
+}
+A:visited
+{
+        COLOR: #FFFFFF;
+}
+
+A:hover
+{
+        COLOR: #FFFFFF;
+        TEXT-DECORATION: none
+}
+
+
+</style>
+</head>
+
+<body>
+<br/>
+
+<h2>Version 1.6 Updates</h2>
+<ul>
+	<li>Fixed download issue for certain devices</li>
+	<li>Added landscape view option</li>
+	<li>Better parsing of urls from SMS. Note: Only urls that begin with a valid protocol (i.e. http://, https://) will be parsed</li>
+	<li>Added find-text option. Note: Due to an Android api bug on some devices this may not highlight the found text, but will still scroll to it.</li>
+	<li>Fix color overriding for some sites</li>
+</ul>
+
+<h2>Version 1.5 Updates</h2>
+<ul>
+<li>Don't let sites disable zoom options</li>
+<li>Add Select Text and Rename options</li>
+<li>Handle unicode strings in page titles</li>
+<li>Download requested pages in background</li>
+<li>Fix timestamps for older entries</li>
+<li>Handle multiple screen densities and sizes</li>
+<li>Add expanded menu to long-click on main menu items</li>
+<li>Add option to store new pages on external memory (i.e. SD Card).</li>
+<!-- <li>Add Retain as an optional default browser. This allows the user to prefer Retain over the default Browser app when opening links from specific applications. 
+This is useful when combined with the Chrome2Phone Android app which lets the user send a link from the Chrome PC web browser directly to the phone via a Chrome extension. There is also a Firefox extension called Fox2Phone.
+</li> -->
+</ul>
+
+<b>Instructions</b><br/>
+To add web pages for later offline reading, browse to any webpage using the normal Browser app and 'Share' the page with Retain (menu->Share). Great for subway, airplane use or other areas with low or no network connectivity. URLs in SMS text messages can be automatically downloaded to the app. <br/><br/>
+
+
+<b>Notes</b><br/>
+<ul>
+<li>Nytimes Mobile site does not include the full title; appears truncated. TechCrunch mobile only put's "TechCrunch" in the title</li>
+<li>Redirects (i.e. bit.ly links) will not show the effective site in the Date/Site listing, will show "bit.ly" for now.</li>
+<li>Images rely on the browser's caching mechanism. Some images may not show</li>
+<li>Some pages may load faster in Airplane mode due to network timeouts when in areas with low signal</li>
+<li>Sites that require a login to view pages that are then Shared from the Browser app may not authenticate in Retain the first time loaded. Try re-fetching the url within Retain.</li>
+</ul>
+
+
+<b>Preferences</b><br/>
+<ul>
+<li>Web Browser User Agent: Some web sites change appearance (or block entirely) depending on the identity of the web browser connecting to it. Use this option to change the identity to one of several types of web browsers.</li>
+<li>Use default colors: Background and text color can be overridden.</li>
+<li>Process URLs from SMS: Will read a URL from any incoming SMS text message.  The entire body of the text must consist of only the URL and must start with 'http'. Any extra characters may cause problems. You can send URLs from an email client using your phone's email address (different for each carrier i.e. Verizon=<i>yourPhoneNumber</i>@vtext.com)</li>
+
+</ul>
+<br/>
+
+<b>About</b><br/>
+Retain is a free, open-source, application under the Apache 2.0 license.<br/>
+Source code is available at:<br/>
+<a href="http://code.google.com/p/retain-android">http://code.google.com/p/retain-android</a> (not affiliated with Google)<br/><br/>
+Please use Settings->Feedback to send any comments or issues
+
+
+
+</body>
+
+</head>
+

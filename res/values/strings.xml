@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Retain</string>
+	<string name="prefs_name">Preferences</string>
+	<string name="about_text">About Retain</string>
+	<string name="feedback">Send Feedback</string>
+
+	<string name="no_items">To add pages, go to the Browser and \'share\' a page with Retain</string>
+	<string name="pref_show_title_title">Show page titles</string>
+	<string name="pref_show_title">Show page titles at top of page view</string>
+	<string name="pref_show_title_no">Don\'t show page titles at top of pages</string>
+	<string name="pref_fgcolor_color_title">Text color</string>
+	<string name="pref_fgcolor_color_summary">Set the text color on pages</string>
+	
+	
+	<string name="pref_remember_pos_on">Remembering page position</string>
+	<string name="pref_key_remember_pos">remember_pos</string>
+	<string name="pref_remember_pos_off">Not remembering page position</string>
+	<string name="pref_remember_pos_title">Remember page position</string>
+	
+	<string name="pref_force_landscape">View in landscape?</string>
+	<string name="pref_force_landscape_summary">Forces landscape view for all pages</string>
+		
+	
+	<string name="pref_sms_title">Process URLs from SMS</string>
+	<string name="pref_sms_summary">Download URLs from incoming texts</string>
+	
+	<string name="pref_sdcard_title">Store externally?</string>
+	<string name="pref_summary_on_sdcard">Storing new pages on SD card if available</string>
+	<string name="pref_summary_off_sdcard">Storing new pages on internal memory</string>
+
+	<string name="pref_ua_title">Web Browser User Agent</string>
+	<string name="pref_ua_summary">How Retain identifies itself when downloading pages</string>
+	
+	<string name="pref_bgcolor_color_title">Background color</string>
+	<string name="pref_bgcolor_color_summary">Set the background color on pages</string>
+	
+	<string name="pref_delete_data_title">Delete all data</string>
+	<string name="pref_delete_data_title_summary">Don\'t forget to use Menu >Export List to save your data</string>
+
+	<string name="context_menu_title">Select Action</string>
+
+	<string name="exported_msg">Exported from Retain</string>
+	<string name="copy_url_msg">Copied URL</string>
+	<string name="send_url">Share: </string>
+
+	<string name="web_open_url">Open URL in Browser</string>
+	<string name="web_share">Share</string>
+	<string name="web_refetch">Re-fetch URL</string>
+	<string name="web_delete">Delete</string>
+	<string name="web_copy">Copy URL</string>
+	<string name="web_selecttext">Select Text</string>
+	<string name="web_findtext">Find Text</string>
+	<string name="web_rename">Rename</string>
+	<string name="web_landscape">View as Landscape</string>
+	<string name="web_portrait">View as Portrait</string>
+	<string name="web_system_defined">View as System Default</string>
+
+	<string name="ok">OK</string>
+	<string name="cancel">Cancel</string>
+	<string name="confirm">Confirm</string>
+	<string name="delete">Delete</string>
+	<string name="deleted">Deleted</string>
+	<string name="renamedto">Renamed to</string>
+
+	<string name="feedback_email">ryan.aviles@gmail.com</string>
+	<string name="feedback_title">Feedback for </string>
+	
+	<string-array name="ua_entries">
+		<item>Android 2.1</item>
+		<item>Desktop - Firefox 3.6 (Linux/Ubuntu)</item>
+		<item>Desktop - IE 7</item>
+		<item>IPhone - Safari</item>
+	</string-array>
+
+	<string name="pref_camera_title">Camera button action</string>
+	<string name="pref_camera_desc">Select what to do when the camera button is pressed, if available</string>
+	<string-array name="camera_button_entries">
+		<item>Unset</item>
+		<item>Select text</item>
+		<item>Rename title</item>
+		<item>Find text</item>	
+	</string-array>
+	
+	<string name="find_dot">Find on page</string>
+	
+	
+    <!-- Displayed on the Find dialog to display the number of matches
+         found in the current page. -->
+    <plurals name="matches_found">
+        <!-- Case of no matches -->
+        <item quantity="zero">No matches</item>
+        <!-- Case of one match -->
+        <item quantity="one">1 match</item>
+        <!-- Case of "few" (two) matches -->
+        <item quantity="few"><xliff:g id="number" example="2">%d</xliff:g> matches</item>
+        <!-- Case of several matches -->
+        <item quantity="other"><xliff:g id="number" example="137">%d</xliff:g> matches</item>
+    </plurals>
+	
+	<!-- *********************************************************** -->
+	<!-- Internal values, do not translate ************************* -->
+
+	<string name="default_user_agent">Mozilla/5.0 (Linux; U; Android 2.0; en-us; sdk Build/ECLAIR) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17</string>
+
+	<string-array name="ua_values">
+		<item>@string/default_user_agent</item>
+		<item>Mozilla/5.0 (X11; U; Linux x86_64; de; rv:1.9.2.8) Gecko/20100723 Ubuntu/10.04 (lucid) Firefox/3.6.8</item>
+		<item>Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; GTB6.4; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)</item>
+		<item>Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_1 like Mac OS X; en-us) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5F136 Safari/525.20</item>
+	</string-array>	
+	
+	
+	<string name="default_camera_button">unset</string>
+	<string-array name="camera_button_values">
+		<item>unset</item>
+		<item>select</item>
+		<item>rename</item>
+		<item>@string/default_camera_button</item>
+	</string-array>
+		
+	<string name="pref_key_show_title">show_title</string>
+	<string name="pref_key_store_sdcard">store_sdcard</string>
+	<string name="pref_key_bgcolor">bgcolor</string>
+	<string name="pref_key_fgcolor">fgcolor</string>
+	<string name="pref_key_order_by">order_by</string>
+	<string name="pref_key_user_agent">uagent</string>
+	<string name="pref_key_delete_all">delete_all</string>
+	<string name="pref_key_about">about</string>
+	<string name="pref_key_default_colors">def_colors</string>
+	<string name="pref_key_landscape">landscape</string>
+	<string name="pref_key_use_sms">use_sms</string>
+	<string name="pref_key_camera_action">camera_action</string>
+	<string name="pref_key_feedback">feedback</string>
+	
+	
+</resources>

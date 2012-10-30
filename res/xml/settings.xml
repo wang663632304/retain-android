@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<CheckBoxPreference android:summaryOff="@string/pref_show_title_no" android:summaryOn="@string/pref_show_title" android:title="@string/pref_show_title_title" android:key="@string/pref_key_show_title" android:defaultValue="true"></CheckBoxPreference>
+
+<!--
+<CheckBoxPreference android:summaryOff="@string/pref_remember_pos_off" android:summaryOn="@string/pref_remember_pos_on" android:key="@string/pref_key_remember_pos" android:title="@string/pref_remember_pos_title" android:defaultValue="false"></CheckBoxPreference>
+-->
+
+<ListPreference android:enabled="true" android:entries="@array/ua_entries" android:entryValues="@array/ua_values" android:key="@string/pref_key_user_agent" android:defaultValue="@string/default_user_agent" android:title="@string/pref_ua_title" android:summary="@string/pref_ua_summary" android:dialogTitle="@string/pref_ua_title"></ListPreference>
+<ListPreference android:entryValues="@array/camera_button_values" android:entries="@array/camera_button_entries" android:dialogTitle="@string/pref_camera_title" android:key="@string/pref_key_camera_action" android:title="@string/pref_camera_title" android:summary="@string/pref_camera_desc" android:enabled="true" android:selectable="true" android:defaultValue="@string/default_camera_button"></ListPreference><CheckBoxPreference android:summaryOff="@string/pref_summary_off_sdcard" android:summaryOn="@string/pref_summary_on_sdcard" android:key="@string/pref_key_store_sdcard" android:title="@string/pref_sdcard_title" android:defaultValue="false"></CheckBoxPreference><Preference android:title="@string/pref_delete_data_title" android:summary="@string/pref_delete_data_title_summary" android:selectable="true" android:key="@string/pref_key_delete_all"></Preference>
+
+
+<CheckBoxPreference android:summary="@string/pref_sms_summary" android:key="@string/pref_key_use_sms" android:title="@string/pref_sms_title" android:enabled="true" android:defaultValue="false"></CheckBoxPreference><PreferenceCategory android:title="Background &amp; Text colors on web pages"><CheckBoxPreference android:selectable="true" android:enabled="true" android:defaultValue="true" android:key="@string/pref_key_default_colors" android:title="Use default colors" android:summary="Use original colors from sites"></CheckBoxPreference><Preference android:selectable="true" android:summary="@string/pref_bgcolor_color_summary" android:title="@string/pref_bgcolor_color_title" android:key="@string/pref_key_bgcolor"></Preference><Preference android:summary="@string/pref_fgcolor_color_summary" android:selectable="true" android:title="@string/pref_fgcolor_color_title" android:key="@string/pref_key_fgcolor"></Preference>
+</PreferenceCategory>
+<PreferenceCategory android:title="Other"><Preference android:key="@string/pref_key_about" android:title="@string/about_text"></Preference><Preference android:key="@string/pref_key_feedback" android:title="@string/feedback"></Preference>
+</PreferenceCategory>
+
+
+
+
+
+
+
+</PreferenceScreen>

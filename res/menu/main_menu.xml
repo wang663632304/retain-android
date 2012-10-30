@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:checked="false" android:enabled="true" android:checkable="false" android:icon="@android:drawable/ic_menu_preferences" android:menuCategory="system" android:title="Settings" android:visible="true" android:id="@+id/mainMenuSettings"></item>
+
+
+
+<item android:menuCategory="system" android:checkable="false" android:icon="@android:drawable/ic_menu_close_clear_cancel" android:enabled="true" android:checked="false" android:visible="true" android:title="Exit" android:id="@+id/mainMenuExit"></item>
+<item android:id="@+id/mainMenuHelp" android:titleCondensed="Help" android:menuCategory="system" android:title="Help" android:icon="@android:drawable/ic_menu_help" android:visible="true" android:enabled="true"></item>
+<item android:title="Export List" android:id="@+id/mainMenuExport" android:menuCategory="system" android:icon="@android:drawable/ic_menu_save" android:enabled="true" android:checkable="false" android:checked="false" android:visible="true"></item>
+<item android:id="@+id/mainMenuTest" android:checkable="false" android:enabled="true" android:title="test" android:visible="false"></item>
+</menu>
