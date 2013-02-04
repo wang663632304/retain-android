@@ -1,14 +1,14 @@
-package com.retain.dialog;
+package com.retain2.dialog;
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.widget.EditText;
 
-import com.retain.PageInfo;
-import com.retain.R;
-import com.retain.WebDbAdapter;
-import com.retain.RenameHandlerInterface.OnRenameItemListener;
+import com.retain2.R;
+import com.retain2.PageInfo;
+import com.retain2.WebDbAdapter;
+import com.retain2.RenameHandlerInterface.OnRenameItemListener;
 
 public class RenameDialog extends AlertDialog {
 

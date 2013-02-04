@@ -1,4 +1,4 @@
-package com.retain;
+package com.retain2;
 
 import java.io.File;
 import java.net.URI;
@@ -25,9 +25,10 @@ import android.webkit.WebView;
 import android.webkit.WebView.PictureListener;
 import android.webkit.WebViewClient;
 
-import com.retain.dialog.DeleteDialog;
-import com.retain.dialog.FindDialog;
-import com.retain.dialog.RenameDialog;
+import com.retain2.R;
+import com.retain2.dialog.DeleteDialog;
+import com.retain2.dialog.FindDialog;
+import com.retain2.dialog.RenameDialog;
 
 public class WebViewActivity extends BrowserActivity {
 
@@ -97,7 +98,7 @@ public class WebViewActivity extends BrowserActivity {
 
 		//getWindow().setFeatureInt(Window.FEATURE_PROGRESS, Window.PROGRESS_VISIBILITY_ON);
 
-		mWebView = (WebView) findViewById(com.retain.R.id.webview2);
+		mWebView = (WebView) findViewById(com.retain2.R.id.webview2);
 
 		WebSettings webSettings = mWebView.getSettings();
 		webSettings.setSavePassword(false);

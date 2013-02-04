@@ -1,4 +1,4 @@
-package com.retain;
+package com.retain2;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -32,8 +32,9 @@ import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemLongClickListener;
 
-import com.retain.dialog.DeleteDialog;
-import com.retain.dialog.RenameDialog;
+import com.retain2.R;
+import com.retain2.dialog.DeleteDialog;
+import com.retain2.dialog.RenameDialog;
 
 public class ViewController
 {
@@ -71,7 +72,7 @@ public class ViewController
         if( mDataCursor.getCount() == 0)
         {
         	TextView tv = new TextView(mActivity);
-        	tv.setText(mActivity.getString(com.retain.R.string.no_items));
+        	tv.setText(mActivity.getString(com.retain2.R.string.no_items));
         	
         	showView( tv );
         	return;
@@ -146,7 +147,7 @@ public class ViewController
 	{
 		removeViews();
 		
-		LinearLayout ll = (LinearLayout) mActivity.findViewById(com.retain.R.id.mainLinearLayout);
+		LinearLayout ll = (LinearLayout) mActivity.findViewById(com.retain2.R.id.mainLinearLayout);
 		ll.addView( view );			
 	}
 
@@ -336,7 +337,7 @@ public class ViewController
 
 	private void removeViews()
 	{
-		LinearLayout ll = (LinearLayout) mActivity.findViewById(com.retain.R.id.mainLinearLayout);
+		LinearLayout ll = (LinearLayout) mActivity.findViewById(com.retain2.R.id.mainLinearLayout);
 		ll.removeAllViews();
 	}
 	

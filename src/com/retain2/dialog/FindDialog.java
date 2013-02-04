@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.retain.dialog;
+package com.retain2.dialog;
 
 import java.lang.reflect.Method;
 
@@ -35,8 +35,8 @@ import android.webkit.WebView;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.retain.BrowserActivity;
-import com.retain.R;
+import com.retain2.R;
+import com.retain2.BrowserActivity;
 
 import android.util.Log;
 

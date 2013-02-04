@@ -1,15 +1,15 @@
-package com.retain.dialog;
+package com.retain2.dialog;
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.database.Cursor;
 
-import com.retain.AppUtils;
-import com.retain.DeleteHandlerInterface;
-import com.retain.PageInfo;
-import com.retain.R;
-import com.retain.WebDbAdapter;
+import com.retain2.R;
+import com.retain2.AppUtils;
+import com.retain2.DeleteHandlerInterface;
+import com.retain2.PageInfo;
+import com.retain2.WebDbAdapter;
 
 public class DeleteDialog  {
 

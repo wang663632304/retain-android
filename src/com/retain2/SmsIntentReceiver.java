@@ -1,9 +1,11 @@
-package com.retain;
+package com.retain2;
 
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URL;
 import java.net.URISyntaxException;
+
+import com.retain2.R;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

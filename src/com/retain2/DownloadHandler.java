@@ -1,4 +1,4 @@
-package com.retain;
+package com.retain2;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -14,6 +14,8 @@ import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpUriRequest;
+
+import com.retain2.R;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -35,7 +37,7 @@ public class DownloadHandler implements Handler.Callback{
 	private static final String LOG_TAG = "DownloadHandler";
 	private static final long[] NO_FEEDBACK = new long[] {0L, 0L, 0L, 0L};
 
-	public static final  String DATA_DIR = Environment.getDataDirectory() + "/data/com.retain";
+	public static final  String DATA_DIR = Environment.getDataDirectory() + "/data/com.retain2";
     private static final String WEB_DIR =  DATA_DIR + "/webdata";
     
     public static final  String RESOURCES_DIR =  DATA_DIR + "/resources";
@@ -108,7 +110,7 @@ public class DownloadHandler implements Handler.Callback{
 		boolean errorOccurred = true;
 		int notifyId = 0;
 		String host = AppUtils.getHostFromUrl(url);
-		
+		boolean ioError = false;
     	try
     	{    
     		if( host == null )
@@ -200,6 +202,7 @@ public class DownloadHandler implements Handler.Callback{
     	}
     	catch(IOException ioe)
     	{
+    		ioError = true;
     		Log.e(LOG_TAG, "RETAIN IOException: " + ioe.getMessage());
     	}
     	catch( URISyntaxException u)
@@ -218,8 +221,12 @@ public class DownloadHandler implements Handler.Callback{
 		hideNotification(notifyId);
     	if( errorOccurred && host != null)
     	{
-    		showNotification( "Error Downloading", host, android.R.drawable.stat_notify_error, 0 );
-    		postToast("Error fetching " + host);
+    		String msg = "Error fetching ";
+    		if( ioError )
+    			msg = "Filesystem error while fetching ";
+    		
+    		showNotification( msg, host, android.R.drawable.stat_notify_error, 0 );
+    		postToast(msg + host);
         }
     		
     	dbHelper.close();

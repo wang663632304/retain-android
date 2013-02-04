@@ -1,9 +1,11 @@
-package com.retain;
+package com.retain2;
 
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+
+import com.retain2.R;
 
 import android.app.Activity;
 import android.app.AlertDialog;

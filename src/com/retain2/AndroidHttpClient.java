@@ -1,4 +1,4 @@
-package com.retain;
+package com.retain2;
 
 /*
  * Copyright (C) 2008 ZXing authors
