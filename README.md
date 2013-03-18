@@ -11,3 +11,6 @@ Screenshots
 <img src="https://raw.github.com/raviles/retain-android/master/screenshots/site.png" height="50%" /><br/><br/>
 <img src="https://raw.github.com/raviles/retain-android/master/screenshots/view.png" height="50%" /><br/><br/>
 <img src="https://raw.github.com/raviles/retain-android/master/screenshots/settings.png" height="50%" /><br/><br/>
+
+<br/><br/>
+See LICENSE.txt for source code usage and redistribution
